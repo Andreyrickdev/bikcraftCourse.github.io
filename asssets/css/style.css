@@ -1,3 +1,11 @@
+:root {
+  --cor-primaria: #ee2211;
+  --cor-secundaria: #900;
+  --fundo-bg1: #f7f7f7;
+  --fundo-bg2: #fff;
+  --cor-texto: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +15,8 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-bg1);
+  color: var(--cor-texto);
 }
 
 header {
@@ -46,15 +55,15 @@ header nav ul li a {
   padding: 15px 30px;
   display: inline-block;
   text-transform: uppercase;
-  background-color: #fff;
-  color: #000;
-  border: 3px solid #fff;
+  background-color: var(--fundo-bg2);
+  color: var(--cor-texto);
+  border: 3px solid var(--fundo-bg2);
   border-radius: 4px;
   transition: 0.2s;
 }
 
 header nav ul li a:hover {
-  border: 3px solid #900;
+  border: 3px solid var(--cor-secundaria);
 }
 
 main {
@@ -80,7 +89,7 @@ main > section {
 }
 
 main article {
-  background-color: #fff;
+  background-color: var(--fundo-bg2);
   text-align: right;
   display: grid;
   padding: 1.87rem;
@@ -108,7 +117,7 @@ main article::after {
   content: " ";
   width: 3.75rem;
   height: 4px;
-  background-color: red;
+  background-color: var(--cor-primaria);
   position: absolute;
   top: 30px;
   right: -30px;
@@ -118,7 +127,7 @@ main article::after {
   main article::after {
     width: 3.75rem;
     height: 4px;
-    background-color: red;
+    background-color: var(--cor-primaria);
     position: absolute;
     top: 70px;
     right: 320px;
@@ -132,14 +141,14 @@ main article::after {
 }
 
 main article .button {
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   padding: 15px 30px;
   font-size: 1.1rem;
   text-transform: uppercase;
   display: grid;
   justify-self: end;
   border-radius: 4px;
-  color: #fff;
+  color: var(--fundo-bg2);
   text-align: center;
   transition: 0.2s;
 }
@@ -151,7 +160,7 @@ main article .button {
 }
 
 main article .button:hover {
-  background-color: #900;
+  background-color: var(--cor-secundaria);
 }
 
 main article h1 {
@@ -216,7 +225,7 @@ main div h2 {
 }
 
 main section {
-  background-color: #fff;
+  background-color: var(--fundo-bg2);
 }
 
 main section ul {
@@ -255,11 +264,11 @@ main section ul li {
 }
 
 main section ul li:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-bg1);
 }
 
 main section ul li:hover {
-  border-left: 4px solid #900;
+  border-left: 4px solid var(--cor-primaria);
 }
 
 main section ul li h2 {
@@ -274,7 +283,7 @@ main section ul li p {
 }
 
 footer {
-  background-color: #fff;
+  background-color: var(--fundo-bg2);
   padding: 40px;
   text-align: center;
   margin-top: 60px;
