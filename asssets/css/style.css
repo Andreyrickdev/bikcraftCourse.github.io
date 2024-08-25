@@ -4,6 +4,18 @@
   --fundo-bg1: #f7f7f7;
   --fundo-bg2: #fff;
   --cor-texto: #000;
+  --onda-detalhe: url("../imgs/img/onda-clara.svg");
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --fundo-bg1: #222;
+    --fundo-bg2: #222;
+    --cor-texto: #fff;
+    --onda-detalhe: url("../imgs/img/onda-escura.svg");
+  }
+
 }
 
 * {
@@ -40,8 +52,8 @@ header {
   }
 }
 
-header #img-box {
-  text-align: center;
+header svg {
+  margin: 0 auto;
 }
 
 header nav ul {
@@ -198,7 +210,7 @@ main div img {
 main .vantagens {
   display: grid;
   align-content: center;
-  background-image: url("../imgs/img/onda.svg");
+  background-image: var(--onda-detalhe);
 }
 
 
